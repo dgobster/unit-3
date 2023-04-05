@@ -1,64 +1,64 @@
-geo,tot_pop_10,fam_pov,gds_svcs,pc_trst,trst_trps,pc_ownvh
-Highlands,1601,0,G,61.8,461,99.1
-Hoyt Park,3551,32,G,90.1,2369,92.5
-Lakeview,3401,N/A,G,72,393,N/A
-Milwaukee,5130,84,G,90.6,408,91.9
-Nakoma,3201,0,G,61,968,99.1
-Nelson,1050,N/A,None,55.3,227,N/A
-Prairie,4339,37,G,44.6,340,96.9
-Blackhawk,2605,N/A,None,0,0,N/A
-Gammon,2643,0,None,45.4,294,90.1
-Midvale,3146,4,G,97.6,1249,98.9
-Pioneer,228,N/A,G,0,246,N/A
-Rattman,1075,N/A,None,6.2,257,N/A
-Raymond,6590,24,G,41.6,410,98.9
-Sauk Point,3054,15,G,60.3,535,96
-Arbor-McKee,3202,N/A,G,96.3,697,N/A
-Cottage Grove,1545,N/A,G,1.2,60,N/A
-Eastmorland,3166,N/A,G,91.3,2828,N/A
-Midtown,2059,N/A,None,22.2,70,N/A
-Mineral Point,1391,32,G,43,3116,85.7
-Highland Park,7419,82,G,95.2,3080,81.9
-Highpoint,7751,25,G,74.9,656,96.4
-East Washington,1806,86,G,51.8,1460,93.3
-Junction,1628,N/A,G,53.8,310,N/A
-Sprecher,4642,37,G,48.9,60,93.7
-Spring Harbor,2532,7,G,66.4,1408,90.7
-Emerson-Eken,4804,40,G,98.8,3870,89.9
-Fair Oaks,5284,N/A,G,97.6,2809,N/A
-Swanton,3560,92,G,68.5,642,85.4
-Sycamore,5082,15,G,64,465,91.3
-Truax Field,1724,N/A,G,91.5,1585,N/A
-University Hills,5372,86,G,88.9,2497,84.7
-Burr Oaks,3414,N/A,G,94.3,1978,N/A
-Capitol Square,7485,67,G,100,3836,77.7
-Golf Park,2436,8,G,93.8,2979,97.7
-University Ridge,319,N/A,None,92.8,70,N/A
-Walnut Grove,5012,197,G,61.8,535,86.2
-Mendota,1341,N/A,None,47.5,198,N/A
-Near West,16319,155,G,99,5077,55.1
-Pumpkin Hollow Westchester,5554,N/A,G,84.1,1234,N/A
-Southeast,2194,N/A,None,55,224,N/A
-Warner Park,3139,187,G,87.9,393,95
-Waunona Way,1968,72,None,82.2,440,91.1
-South Shore,2400,92,G,95,1168,86.2
-City of Madison,232965,3062,G,75,10380,88.6
-Orchard Ridge,4184,28,G,75.1,824,87.4
-Allis,2374,18,G,84,661,98.1
-West Lawn,2311,16,None,98.7,973,97.8
-Univ Campus,7342,31,G,100,4900,44.9
-Sherman Park,4165,48,G,87.1,2249,88.4
-Tenney Park,5258,30,G,95.7,1999,89.1
-Elderberry,582,N/A,None,0,0,N/A
-Glendale,2243,N/A,G,74.4,661,N/A
-Gompers,3386,54,None,70.1,393,92.8
-Badger,3296,N/A,None,63.6,400,N/A
-Cherokee,1462,N/A,None,0,0,N/A
-Buckeye,6208,31,G,82.1,237,94.8
-Greentree,6652,292,G,77.6,906,94.1
-Marlborough,2358,N/A,G,89.7,486,N/A
-Marquette,6105,0,G,94.5,1950,95.2
-Crestwood,2110,21,G,75,1929,95.8
-Cross Country,7308,N/A,G,0.5,0,N/A
-Eagle Heights,2716,101,G,88.3,2902,77.8
-Wingra Park,5890,66,G,94.7,2325,89.5
+geo_key,geo,tot_pop_10,fam_pov,gds_svcs,pc_trst,trst_trps,pc_ownvh
+58,Highlands,1601,0,G,61.8,461,99.1
+47,Hoyt Park,3551,32,G,90.1,2369,92.5
+12,Lakeview,3401,N/A,G,72,393,N/A
+17,Milwaukee,5130,84,G,90.6,408,91.9
+50,Nakoma,3201,0,G,61,968,99.1
+36,Nelson,1050,N/A,None,55.3,227,N/A
+65,Prairie,4339,37,G,44.6,340,96.9
+79,Blackhawk,2605,N/A,None,0,0,N/A
+59,Gammon,2643,0,None,45.4,294,90.1
+48,Midvale,3146,4,G,97.6,1249,98.9
+81,Pioneer,228,N/A,G,0,246,N/A
+37,Rattman,1075,N/A,None,6.2,257,N/A
+71,Raymond,6590,24,G,41.6,410,98.9
+61,Sauk Point,3054,15,G,60.3,535,96
+67,Arbor-McKee,3202,N/A,G,96.3,697,N/A
+30,Cottage Grove,1545,N/A,G,1.2,60,N/A
+6,Eastmorland,3166,N/A,G,91.3,2828,N/A
+82,Midtown,2059,N/A,None,22.2,70,N/A
+62,Mineral Point,1391,32,G,43,3116,85.7
+45,Highland Park,7419,82,G,95.2,3080,81.9
+63,Highpoint,7751,25,G,74.9,656,96.4
+8,East Washington,1806,86,G,51.8,1460,93.3
+75,Junction,1628,N/A,G,53.8,310,N/A
+28,Sprecher,4642,37,G,48.9,60,93.7
+52,Spring Harbor,2532,7,G,66.4,1408,90.7
+7,Emerson-Eken,4804,40,G,98.8,3870,89.9
+5,Fair Oaks,5284,N/A,G,97.6,2809,N/A
+29,Swanton,3560,92,G,68.5,642,85.4
+27,Sycamore,5082,15,G,64,465,91.3
+9,Truax Field,1724,N/A,G,91.5,1585,N/A
+51,University Hills,5372,86,G,88.9,2497,84.7
+56,Burr Oaks,3414,N/A,G,94.3,1978,N/A
+2,Capitol Square,7485,67,G,100,3836,77.7
+49,Golf Park,2436,8,G,93.8,2979,97.7
+83,University Ridge,319,N/A,None,92.8,70,N/A
+60,Walnut Grove,5012,197,G,61.8,535,86.2
+22,Mendota,1341,N/A,None,47.5,198,N/A
+41,Near West,16319,155,G,99,5077,55.1
+23,Pumpkin Hollow Westchester,5554,N/A,G,84.1,1234,N/A
+20,Southeast,2194,N/A,None,55,224,N/A
+11,Warner Park,3139,187,G,87.9,393,95
+72,Waunona Way,1968,72,None,82.2,440,91.1
+43,South Shore,2400,92,G,95,1168,86.2
+1,City of Madison,232965,3062,G,75,10380,88.6
+54,Orchard Ridge,4184,28,G,75.1,824,87.4
+15,Allis,2374,18,G,84,661,98.1
+46,West Lawn,2311,16,None,98.7,973,97.8
+44,Univ Campus,7342,31,G,100,4900,44.9
+10,Sherman Park,4165,48,G,87.1,2249,88.4
+3,Tenney Park,5258,30,G,95.7,1999,89.1
+80,Elderberry,582,N/A,None,0,0,N/A
+16,Glendale,2243,N/A,G,74.4,661,N/A
+21,Gompers,3386,54,None,70.1,393,92.8
+70,Badger,3296,N/A,None,63.6,400,N/A
+14,Cherokee,1462,N/A,None,0,0,N/A
+18,Buckeye,6208,31,G,82.1,237,94.8
+64,Greentree,6652,292,G,77.6,906,94.1
+55,Marlborough,2358,N/A,G,89.7,486,N/A
+4,Marquette,6105,0,G,94.5,1950,95.2
+53,Crestwood,2110,21,G,75,1929,95.8
+77,Cross Country,7308,N/A,G,0.5,0,N/A
+69,Eagle Heights,2716,101,G,88.3,2902,77.8
+42,Wingra Park,5890,66,G,94.7,2325,89.5
