@@ -1,8 +1,22 @@
-.countries {
-    fill: #FFF;
+.madison {
+    fill: #fcf8dd;
     stroke: #CCC;
     stroke-width: 2px;
 }
+
+.dane {
+    fill: #ffffff;
+    stroke: #CCC;
+    stroke-width: 2px;
+}
+
+.water{
+    fill: #e7fbfb;
+    stroke: #CCC;
+    stroke-width: 2px;
+}
+
+
 
 .map {
     border: medium solid #999;
