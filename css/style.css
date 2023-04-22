@@ -1,9 +1,3 @@
-.madison {
-    fill: #fcf8dd;
-    stroke: #CCC;
-    stroke-width: 2px;
-}
-
 .dane {
     fill: #ffffff;
     stroke: #CCC;
@@ -29,7 +23,7 @@
 }
 
 .madison {
-    stroke: #000;
+    stroke: #676565;
     stroke-width: 0.5px;
     stroke-linecap: round;
 }
@@ -37,6 +31,7 @@
 .numbers {
     fill: white;
     font-family: sans-serif;
+    font-size: .5em;
 }
 
 .chart {
@@ -73,4 +68,21 @@
     font-family: sans-serif;
     font-size: 0.8em;
     fill: #999;
+}
+
+.dropdown {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    z-index: 10;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 2px;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 4px #CCC;
+}
+
+option {
+    font-weight: normal;
 }
