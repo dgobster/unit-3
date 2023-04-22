@@ -156,6 +156,14 @@
         return colorScale;
     };
 
+ //function to highlight enumeration units and bars
+ function highlight(props) {
+    //change stroke
+    var selected = d3
+        .selectAll("." + props.geo_key)
+        .style("stroke", "blue")
+        .style("stroke-width", "2");
+};
 
     function setEnumerationUnits(districtsMadison, map, path, colorScale) {
 
@@ -340,13 +348,4 @@
             .text("Percent Regional " + expressed);
 
     }
-
-    //function to highlight enumeration units and bars
-    function highlight(props) {
-        //change stroke
-        var selected = d3
-            .selectAll("." + props.geo_key)
-            .style("stroke", "blue")
-            .style("stroke-width", "2");
-    };
 })();
