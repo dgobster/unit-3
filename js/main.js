@@ -55,7 +55,7 @@
             d3.csv("data/nip_plandistrict_20.csv"),
             d3.json("data/Dane_Municipal_Boundaries_2021.topojson"),
             d3.json("data/Lakes2.topojson"),
-            d3.json("data/nip_plandistrict_2020.topojson"),
+            d3.json("data/nip_final2.topojson"),
         ];
         Promise.all(promises).then(callback);
 
@@ -68,7 +68,7 @@
             //translate districts, county to TopoJSON
             var countyDane = topojson.feature(county, county.objects.Dane_Municipal_Boundaries_2021),
                 lakesWater = topojson.feature(lakes, lakes.objects.Lakes2),
-                districtsMadison = topojson.feature(districts, districts.objects.nip_plandistrict_2020).features;
+                districtsMadison = topojson.feature(districts, districts.objects.nip_final2).features;
 
             //add Dane County to map
             var dane = map
@@ -107,13 +107,13 @@
         //loop through csv to assign each set of csv attribute values to geojson region
         for (var i = 0; i < csvData.length; i++) {
             var csvMadison = csvData[i]; //the current region
-            var csvKey = csvMadison.geo_key; //the CSV primary key
+            var csvKey = csvMadison.geo; //the CSV primary key
 
             //loop through geojson regions to find correct region
             for (var a = 0; a < districtsMadison.length; a++) {
 
                 var geojsonProps = districtsMadison[a].properties; //the current region geojson properties
-                var geojsonKey = geojsonProps.geo_key; //the geojson primary key
+                var geojsonKey = geojsonProps.geo; //the geojson primary key
 
                 //where primary keys match, transfer csv data to geojson properties object
                 if (geojsonKey == csvKey) {
@@ -156,14 +156,6 @@
         return colorScale;
     };
 
- //function to highlight enumeration units and bars
- function highlight(props) {
-    //change stroke
-    var selected = d3
-        .selectAll("." + props.geo_key)
-        .style("stroke", "blue")
-        .style("stroke-width", "2");
-};
 
     function setEnumerationUnits(districtsMadison, map, path, colorScale) {
 
@@ -174,7 +166,7 @@
             .enter()
             .append("path")
             .attr("class", function (d) {
-                return "madison " + d.properties.geo_key;
+                return "madison " + d.properties.geo;
             })
             .attr("d", path)
             .style("fill", function (d) {
@@ -186,8 +178,12 @@
                 }
             })
             .on("mouseover", function (event, d) {
-                highlight(d.properties);
+                highlight(d.properties)
             })
+            .on("mouseout", function (event, d) {
+                dehighlight()
+            })
+            .on("mousemove", moveLabel);
     };
 
     //function to create coordinated bar chart
@@ -219,12 +215,16 @@
                 return b[expressed] - a[expressed];
             })
             .attr("class", function (d) {
-                return "bar " + d.geo_key;
+                return "bar " + d.geo;
             })
             .attr("width", chartInnerWidth / csvData.length - 1)
             .on("mouseover", function (event, d) {
                 highlight(d);
-            });
+            })
+            .on("mouseout", function (event, d) {
+                dehighlight()
+            })
+            .on("mousemove", moveLabel);
 
         //create a text element for the chart title
         var chartTitle = chart
@@ -276,12 +276,12 @@
             .data(attrArray)
             .enter()
             .append("option")
-            .attr("value", function (d) { 
+            .attr("value", function (d) {
                 return d;
-             })
-            .text(function (d) { 
+            })
+            .text(function (d) {
                 return d;
-             });
+            });
     };
     //dropdown change event handler
     function changeAttribute(attribute, csvData) {
@@ -346,6 +346,73 @@
         var chartTitle = d3
             .select(".chartTitle")
             .text("Percent Regional " + expressed);
-
     }
+
+    //function to highlight enumeration units and bars
+    function highlight(props) {
+        //change stroke
+        var selected = d3
+            .selectAll("." + props.geo)
+            .style("stroke", "blue")
+            .style("stroke-width", "2");
+        setLabel(props);
+
+    };
+    //function to dehighlight enumeration units and bars
+    function dehighlight() {
+        //change stroke
+        var madison = d3
+            .selectAll(".madison")
+            .style("stroke", "black")
+            .style("stroke-width", "0.5");
+
+        var madison = d3
+            .selectAll(".bar")
+            .style("stroke", "none")
+            .style("stroke-width", "0");
+
+        //remove info label
+        d3.select(".infolabel").remove();
+    };
+
+    //function to create dynamic label
+    function setLabel(props) {
+        //label content
+        var labelAttribute = "<h1>" + props[expressed] +
+            "</h1><b>" + expressed + "</b>";
+
+        //create info label div
+        var infolabel = d3.select("body")
+            .append("div")
+            .attr("class", "infolabel")
+            .attr("id", props.geo + "_label")
+            .html(labelAttribute);
+
+        var madisonName = infolabel.append("div")
+            .attr("class", "labelname")
+            .html(props.name);
+    };
+
+    function moveLabel(){
+        //get width of label
+        var labelWidth = d3.select(".infolabel")
+            .node()
+            .getBoundingClientRect()
+            .width;
+    
+        //use coordinates of mousemove event to set label coordinates
+        var x1 = event.clientX + 10,
+            y1 = event.clientY - 75,
+            x2 = event.clientX - labelWidth - 10,
+            y2 = event.clientY + 25;
+    
+        //horizontal label coordinate, testing for overflow
+        var x = event.clientX > window.innerWidth - labelWidth - 20 ? x2 : x1; 
+        //vertical label coordinate, testing for overflow
+        var y = event.clientY < 75 ? y2 : y1; 
+    
+        d3.select(".infolabel")
+            .style("left", x + "px")
+            .style("top", y + "px");
+    };
 })();

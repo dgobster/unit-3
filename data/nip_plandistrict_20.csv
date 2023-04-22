@@ -7,14 +7,14 @@ geo_key,geo,own_occ,white,fam_child,transit_stop,over_64
 36,Nelson,34,76,15,55,12
 65,Prairie,68,77,29,45,7
 79,Blackhawk,56,83,39,0,5
-59,1ammon,63,85,22,45,17
+59,Gammon,63,85,22,45,17
 48,Midvale,90,91,27,98,17
 81,Pioneer,79,81,34,0,5
 37,Rattman,51,83,16,6,32
 71,Raymond,62,75,31,42,4
 61,Sauk Point,61,82,23,60,17
 67,Arbor-McKee,36,59,26,96,9
-30,Cottage 1rove,70,86,18,1,17
+30,Cottage Grove,70,86,18,1,17
 6,Eastmorland,81,90,19,91,14
 82,Midtown,83,82,40,22,6
 62,Mineral Point,19,82,6,43,49
@@ -32,9 +32,9 @@ geo_key,geo,own_occ,white,fam_child,transit_stop,over_64
 51,University Hills,31,67,15,89,18
 56,Burr Oaks,24,24,33,94,6
 2,Capitol Square,16,81,2,100,9
-49,1olf Park,80,81,25,94,17
+49,Golf Park,80,81,25,94,17
 83,University Ridge,18,86,11,93,2
-60,Walnut 1rove,50,67,24,62,13
+60,Walnut Grove,50,67,24,62,13
 22,Mendota,80,82,28,48,9
 41,Near West,2,81,1,99,1
 23,Pumpkin Hollow Westchester,46,67,23,84,7
@@ -42,7 +42,6 @@ geo_key,geo,own_occ,white,fam_child,transit_stop,over_64
 11,Warner Park,53,57,32,88,10
 72,Waunona Way,44,63,24,82,11
 43,South Shore,45,84,16,95,11
-1,City of Madison,49,76,21,75,10
 54,Orchard Ridge,69,75,25,75,17
 15,Allis,83,89,22,84,13
 46,West Lawn,78,92,28,99,9
@@ -50,12 +49,12 @@ geo_key,geo,own_occ,white,fam_child,transit_stop,over_64
 10,Sherman Park,54,71,21,87,14
 3,Tenney Park,27,84,11,96,4
 80,Elderberry,64,86,36,0,18
-16,1lendale,74,79,25,74,16
-21,1ompers,90,80,24,70,16
+16,Glendale,74,79,25,74,16
+21,Gompers,90,80,24,70,16
 70,Badger,59,52,32,64,6
 14,Cherokee,98,95,10,0,35
 18,Buckeye,83,83,29,82,12
-64,1reentree,45,64,25,78,13
+64,Greentree,45,64,25,78,13
 55,Marlborough,28,32,40,90,4
 4,Marquette,35,88,14,95,5
 53,Crestwood,81,87,21,75,19
