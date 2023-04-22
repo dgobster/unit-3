@@ -2,7 +2,7 @@
 (function () {
 
     //pseudo-global variables
-    var attrArray = ["own_occ", "white", "fam_child", "transit_stop", "over_64"]; //list of attributes
+    var attrArray = ["Transit", "Homeowners", "White", "Children", "Seniors"]; //list of attributes
     var expressed = attrArray[0]; //initial attribute
 
     //chart frame dimensions
@@ -132,11 +132,11 @@
     //function to create color scale generator
     function makeColorScale(data) {
         var colorClasses = [
-            "#D4B9DA",
-            "#C994C7",
-            "#DF65B0",
-            "#DD1C77",
-            "#980043"
+            "#d8f3fa",
+            "#b3cde3",
+            "#8c96c6",
+            "#8856a7",
+            "#810f7c"
         ];
 
         //create color scale generator
@@ -177,10 +177,10 @@
                     return "#ccc";
                 }
             })
-            .on("mouseover", function (event, d) {
+            .on("mouseover", function (events, d) {
                 highlight(d.properties)
             })
-            .on("mouseout", function (event, d) {
+            .on("mouseout", function (events, d) {
                 dehighlight()
             })
             .on("mousemove", moveLabel);
@@ -218,10 +218,10 @@
                 return "bar " + d.geo;
             })
             .attr("width", chartInnerWidth / csvData.length - 1)
-            .on("mouseover", function (event, d) {
+            .on("mouseover", function (events, d) {
                 highlight(d);
             })
-            .on("mouseout", function (event, d) {
+            .on("mouseout", function (events, d) {
                 dehighlight()
             })
             .on("mousemove", moveLabel);
@@ -229,7 +229,7 @@
         //create a text element for the chart title
         var chartTitle = chart
             .append("text")
-            .attr("x", 40)
+            .attr("x", 175)
             .attr("y", 40)
             .attr("class", "chartTitle");
 
@@ -345,7 +345,9 @@
         //add text to chart title
         var chartTitle = d3
             .select(".chartTitle")
-            .text("Percent Regional " + expressed);
+            .text("Percent " + expressed)
+            .style("fill", "#8b5f00f3")
+            .style("text-align", "center");
     }
 
     //function to highlight enumeration units and bars
@@ -353,8 +355,8 @@
         //change stroke
         var selected = d3
             .selectAll("." + props.geo)
-            .style("stroke", "blue")
-            .style("stroke-width", "2");
+            .style("stroke", "#f8b90df3")
+            .style("stroke-width", "3");
         setLabel(props);
 
     };
@@ -363,7 +365,7 @@
         //change stroke
         var madison = d3
             .selectAll(".madison")
-            .style("stroke", "black")
+            .style("stroke", "#676565")
             .style("stroke-width", "0.5");
 
         var madison = d3
@@ -407,9 +409,9 @@
             y2 = event.clientY + 25;
     
         //horizontal label coordinate, testing for overflow
-        var x = event.clientX > window.innerWidth - labelWidth - 20 ? x2 : x1; 
+        var x = event.clientX > window.innerWidth - labelWidth - 50 ? x2 : x1; 
         //vertical label coordinate, testing for overflow
-        var y = event.clientY < 75 ? y2 : y1; 
+        var y = event.clientY < 400 ? y2 : y1; 
     
         d3.select(".infolabel")
             .style("left", x + "px")

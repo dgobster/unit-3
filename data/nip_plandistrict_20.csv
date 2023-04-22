@@ -1,63 +1,63 @@
-geo_key,geo,own_occ,white,fam_child,transit_stop,over_64
-58,Highlands,84,86,20,62,18
-47,Hoyt Park,63,85,18,90,13
-12,Lakeview,56,61,26,72,9
-17,Milwaukee,84,84,29,91,15
-50,Nakoma,80,89,28,61,14
-36,Nelson,34,76,15,55,12
-65,Prairie,68,77,29,45,7
-79,Blackhawk,56,83,39,0,5
-59,Gammon,63,85,22,45,17
-48,Midvale,90,91,27,98,17
-81,Pioneer,79,81,34,0,5
-37,Rattman,51,83,16,6,32
-71,Raymond,62,75,31,42,4
-61,Sauk Point,61,82,23,60,17
-67,Arbor-McKee,36,59,26,96,9
-30,Cottage Grove,70,86,18,1,17
-6,Eastmorland,81,90,19,91,14
-82,Midtown,83,82,40,22,6
-62,Mineral Point,19,82,6,43,49
-45,Highland Park,44,86,17,95,7
-63,Highpoint,39,73,19,75,11
-8,East Washington,55,68,21,52,9
-75,Junction,39,81,10,54,31
-28,Sprecher,68,84,28,49,13
-52,Spring Harbor,70,79,21,66,13
-7,Emerson-Eken,52,81,18,99,6
-5,Fair Oaks,56,81,22,98,6
-29,Swanton,26,59,32,69,11
-27,Sycamore,44,61,30,64,5
-9,Truax Field,53,61,21,92,10
-51,University Hills,31,67,15,89,18
-56,Burr Oaks,24,24,33,94,6
-2,Capitol Square,16,81,2,100,9
-49,Golf Park,80,81,25,94,17
-83,University Ridge,18,86,11,93,2
-60,Walnut Grove,50,67,24,62,13
-22,Mendota,80,82,28,48,9
-41,Near West,2,81,1,99,1
-23,Pumpkin Hollow Westchester,46,67,23,84,7
-20,Southeast,84,70,47,55,3
-11,Warner Park,53,57,32,88,10
-72,Waunona Way,44,63,24,82,11
-43,South Shore,45,84,16,95,11
-54,Orchard Ridge,69,75,25,75,17
-15,Allis,83,89,22,84,13
-46,West Lawn,78,92,28,99,9
-44,Univ Campus,0,80,0,100,0
-10,Sherman Park,54,71,21,87,14
-3,Tenney Park,27,84,11,96,4
-80,Elderberry,64,86,36,0,18
-16,Glendale,74,79,25,74,16
-21,Gompers,90,80,24,70,16
-70,Badger,59,52,32,64,6
-14,Cherokee,98,95,10,0,35
-18,Buckeye,83,83,29,82,12
-64,Greentree,45,64,25,78,13
-55,Marlborough,28,32,40,90,4
-4,Marquette,35,88,14,95,5
-53,Crestwood,81,87,21,75,19
-77,Cross Country,80,81,37,1,5
-69,Eagle Heights,3,31,39,88,1
-42,Wingra Park,28,83,13,95,5
+geo_key,geo,Transit,Homeowners,White,Children,Seniors
+58,Highlands,62,84,86,20,18
+47,Hoyt Park,90,63,85,18,13
+12,Lakeview,72,56,61,26,9
+17,Milwaukee,91,84,84,29,15
+50,Nakoma,61,80,89,28,14
+36,Nelson,55,34,76,15,12
+65,Prairie,45,68,77,29,7
+79,Blackhawk,0,56,83,39,5
+59,Gammon,45,63,85,22,17
+48,Midvale,98,90,91,27,17
+81,Pioneer,0,79,81,34,5
+37,Rattman,6,51,83,16,32
+71,Raymond,42,62,75,31,4
+61,Sauk Point,60,61,82,23,17
+67,Arbor-McKee,96,36,59,26,9
+30,Cottage Grove,1,70,86,18,17
+6,Eastmorland,91,81,90,19,14
+82,Midtown,22,83,82,40,6
+62,Mineral Point,43,19,82,6,49
+45,Highland Park,95,44,86,17,7
+63,Highpoint,75,39,73,19,11
+8,East Washington,52,55,68,21,9
+75,Junction,54,39,81,10,31
+28,Sprecher,49,68,84,28,13
+52,Spring Harbor,66,70,79,21,13
+7,Emerson-Eken,99,52,81,18,6
+5,Fair Oaks,98,56,81,22,6
+29,Swanton,69,26,59,32,11
+27,Sycamore,64,44,61,30,5
+9,Truax Field,92,53,61,21,10
+51,University Hills,89,31,67,15,18
+56,Burr Oaks,94,24,24,33,6
+2,Capitol Square,100,16,81,2,9
+49,Golf Park,94,80,81,25,17
+83,University Ridge,93,18,86,11,2
+60,Walnut Grove,62,50,67,24,13
+22,Mendota,48,80,82,28,9
+41,Near West,99,2,81,1,1
+23,Pumpkin Hollow Westchester,84,46,67,23,7
+20,Southeast,55,84,70,47,3
+11,Warner Park,88,53,57,32,10
+72,Waunona Way,82,44,63,24,11
+43,South Shore,95,45,84,16,11
+54,Orchard Ridge,75,69,75,25,17
+15,Allis,84,83,89,22,13
+46,West Lawn,99,78,92,28,9
+44,Univ Campus,100,0,80,0,0
+10,Sherman Park,87,54,71,21,14
+3,Tenney Park,96,27,84,11,4
+80,Elderberry,0,64,86,36,18
+16,Glendale,74,74,79,25,16
+21,Gompers,70,90,80,24,16
+70,Badger,64,59,52,32,6
+14,Cherokee,0,98,95,10,35
+18,Buckeye,82,83,83,29,12
+64,Greentree,78,45,64,25,13
+55,Marlborough,90,28,32,40,4
+4,Marquette,95,35,88,14,5
+53,Crestwood,75,81,87,21,19
+77,Cross Country,1,80,81,37,5
+69,Eagle Heights,88,3,31,39,1
+42,Wingra Park,95,28,83,13,5

@@ -1,29 +1,28 @@
 .dane {
-    fill: #ffffff;
+    fill: #fcfcf900;
     stroke: #CCC;
     stroke-width: 2px;
 }
 
 .water{
-    fill: #e7fbfb;
+    fill: #cccccc65;
     stroke: #CCC;
     stroke-width: 2px;
 }
 
 .map {
-    border: medium solid #999;
+    border: medium solid #8b5f00f3;
     margin: 10px 0 0 20px;
 }
 
 .chart {
-    background-color: rgba(128,128,128,.2);
-    border: medium solid #999;
+    border: medium solid #8b5f00f3;
     float: right;
     margin: 10px 20px 0 0;
 }
 
 .madison {
-    stroke: #676565;
+    stroke: #676665;
     stroke-width: 0.5px;
     stroke-linecap: round;
 }
@@ -46,7 +45,7 @@
 }
 
 .chartBackground {
-    fill: rgba(128,128,128,.2);
+    fill: #faf7ad34;
 }
 
 .chartFrame {
@@ -72,15 +71,16 @@
 
 .dropdown {
     position: absolute;
-    top: 30px;
+    top: 375px;
     left: 40px;
     z-index: 10;
     font-family: sans-serif;
     font-size: 1em;
     font-weight: bold;
     padding: 2px;
-    border: 1px solid #CCC;
+    border: 1px solid #8b5f00f3;
     box-shadow: 2px 2px 4px #CCC;
+    color: #8b5f00f3
 }
 
 option {
@@ -107,9 +107,29 @@ option {
 .infolabel {    margin: 0 20px 0 0;    position: absolute;
     height: 50px;
     min-width: 100px;
-    color: #fff;
-    background-color: #000;
+    color: #8b5f00a6;
+    background-color: #faf7ad;
     border: solid thin #fff;
-    padding: 5px 10px;
+    padding: 5px 8px;
     top: -75px;
+}
+
+h1 {
+    color:#8b5f00f3;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+h3{
+    color:#8b5f00f3;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+body{
+    background-color: #faf7ad34;
+}
+
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    color:#8b5f00f3;
+
 }
